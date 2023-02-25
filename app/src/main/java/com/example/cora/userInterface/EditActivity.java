@@ -1,8 +1,10 @@
-package com.example.cora;
+package com.example.cora.userInterface;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.cora.R;
 
 public class EditActivity extends AppCompatActivity {
 

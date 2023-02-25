@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".EditActivity">
+    tools:context=".userInterface.EditActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"

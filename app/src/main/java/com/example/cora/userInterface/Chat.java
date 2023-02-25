@@ -25,7 +25,6 @@ public class Chat extends AppCompatActivity {
     private RecyclerView messageRV;
     private EditText chatEV;
     private ImageView sendIV;
-
     private final String USER_KEY = "user";
     private final String BOT_KEY = "bot";
     private MessageAdapter messageAdapter;

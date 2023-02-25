@@ -7,9 +7,11 @@ import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.cora.api.completions;
 import com.example.cora.api.edits;
@@ -39,7 +41,10 @@ public class CodeEditor extends AppCompatActivity {
                         completionType);
 
                 prompt.setText("");
-                prompt.onEditorAction(EditorInfo.IME_ACTION_DONE);
+                InputMethodManager inputManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+                inputManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
+                Toast.makeText(CodeEditor.this, "Thinking...", Toast.LENGTH_LONG).show();
+
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -40,8 +41,9 @@ public class EditActivity extends AppCompatActivity {
 
             instruction.setText("");
             prompt.setText("");
-            instruction.onEditorAction(EditorInfo.IME_ACTION_DONE);
-            prompt.onEditorAction(EditorInfo.IME_ACTION_DONE);
+            InputMethodManager inputManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+            inputManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
+            Toast.makeText(EditActivity.this, "Thinking...", Toast.LENGTH_LONG).show();
         });
     }
 }

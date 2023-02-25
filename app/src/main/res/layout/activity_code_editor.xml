@@ -58,7 +58,7 @@
         android:ems="10"
         android:hint="Enter Prompt"
         android:maxLines="10"
-        android:padding="8sp"
+        android:paddingStart="8sp"
         android:textColor="@color/grey"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"

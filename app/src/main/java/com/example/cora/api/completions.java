@@ -102,7 +102,7 @@ public class completions {
             postBody.put("top_p", 1);                   // completions to create -- leave at 1
             postBody.put("n", 1);
             postBody.put("stream", false);
-            postBody.put("frequency_penalty", 0.1);
+            postBody.put("frequency_penalty", 0.15);
             postBody.put("stop", "\"\"\"");              // where API will stop generating sequences -- leave blank to allow for full response
 
             Log.i("[API]", "[EDIT-API] Made it past POST");

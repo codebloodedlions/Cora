@@ -7,11 +7,13 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.util.AttributeSet;
 
+import com.example.cora.R;
+
 public class numberedEditText extends androidx.appcompat.widget.AppCompatEditText {
     private Rect rect;
     private Paint paint;
 
-    private int lineNumberMarginGap = 16;
+    private int lineNumberMarginGap = 18;
     protected int LINE_NUMBER_TEXTSIZE_GAP = 2;
     private boolean lineNumberVis = true;
 
@@ -20,7 +22,7 @@ public class numberedEditText extends androidx.appcompat.widget.AppCompatEditTex
         rect = new Rect();
         paint = new Paint();
         paint.setAntiAlias(true);
-        paint.setColor(Color.LTGRAY);
+        paint.setColor(Color.parseColor("#808080"));
         paint.setTextSize(getTextSize() - LINE_NUMBER_TEXTSIZE_GAP);
     }
 

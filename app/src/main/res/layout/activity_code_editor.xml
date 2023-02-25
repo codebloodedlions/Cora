@@ -24,8 +24,10 @@
             android:layout_height="match_parent">
 
            <TextView
+                android:id="@id/responsePane"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+               android:scrollbars="vertical"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="-4dp"
@@ -39,7 +41,7 @@
     </androidx.cardview.widget.CardView>
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editPrompt"
         android:layout_width="300dp"
         android:layout_height="42dp"
         android:layout_marginStart="16dp"
@@ -48,17 +50,16 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/prompt_box_background"
         android:ems="10"
-        android:inputType="textPersonName"
         android:padding="8sp"
-        android:text="Enter prompt..."
+        android:hint="Enter prompt..."
         android:textColor="@color/grey"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/submitButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/submitButton"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"

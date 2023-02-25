@@ -7,6 +7,7 @@ import android.widget.TextView;
 import com.example.cora.api.Models.completions.cRoot;
 import com.example.cora.file.keyRetrieval;
 import com.example.cora.json.ResponseParser;
+import com.example.cora.userInterface.Message;
 
 import org.json.JSONObject;
 
@@ -16,12 +17,14 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class completions {
     //get entire data
-    public static cRoot getAPI_codeCompleteData(AssetManager assetManager, String prompt, String completionType)  {
-        return gptAPI(assetManager, prompt, completionType);
+    public static void addMsgArrResponse(ArrayList<Message> msgArray, String BOT_KEY, AssetManager assetManager, String prompt, String completionType) throws InterruptedException {
+        String temp = codeCompleteText(assetManager, prompt, completionType);
+        msgArray.add(new Message(temp, BOT_KEY));
     }
 
     // set text via UI thread
@@ -71,18 +74,22 @@ public class completions {
                - 'code-cushman-001' only produces code (thus far) with documentation but is suitable for realtime
                - if response is longer than 'max_tokens' the response will be cut off
              */
+            int maxToken = 0;
             switch (completionType) {
                 case "code-complex":
                     Log.i("[API]", "Setting model to complex code completion!");
                     completionType = "code-davinci-002";
+                    maxToken = 900;
                     break;
                 case "code-simple":
                     Log.i("[API]", "Setting model to simple code completion!");
                     completionType = "code-cushman-001";
+                    maxToken = 900;
                     break;
                 case "text":
                     Log.i("[API]", "Setting model to text completion!");
                     completionType = "text-davinci-003";
+                    maxToken = 75;
                     break;
                 default:
                     Log.e("[API]", "[API-SET-MODEL] COME ON D! yes I'm looking at you!");
@@ -97,7 +104,7 @@ public class completions {
             JSONObject postBody = new JSONObject();
             postBody.put("model", completionType);           // model to use -- 'code-davinci-002' or 'code-cushman-001' for code completion
             postBody.put("prompt", prompt);
-            postBody.put("max_tokens", 800);
+            postBody.put("max_tokens", maxToken);
             postBody.put("temperature", 0.1);           // lower == more deterministic || higher == more random -- 0.2-0.4 seems to be the sweet spot
             postBody.put("top_p", 1);                   // completions to create -- leave at 1
             postBody.put("n", 1);
@@ -120,7 +127,6 @@ public class completions {
                 while ((jsonResponseString = br.readLine()) != null) {
                     response.append(jsonResponseString.trim());
                 }
-                //System.out.println("[HTTP-RESPONSE] >> " + response);
             }
             catch (Exception ex){
                 BufferedReader br = new BufferedReader(new InputStreamReader(connection.getErrorStream(), StandardCharsets.UTF_8));
@@ -138,8 +144,6 @@ public class completions {
 
             // leave arrayList element at 0 || get text is the generated response from the API
             Log.i("[API]", "[COMPLETION-TEST-PROMPT-ANSWER] >> " + responseData.choices.get(0).getText());
-
-//            System.out,println("Hello World!");
         }
         catch (Exception ex){
             ex.printStackTrace();

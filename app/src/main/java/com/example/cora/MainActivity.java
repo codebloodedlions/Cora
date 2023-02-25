@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+import com.example.cora.userInterface.Chat;
 import com.example.cora.userInterface.CodeEditor;
 import com.example.cora.userInterface.EditActivity;
 
@@ -23,6 +24,11 @@ public class MainActivity extends AppCompatActivity {
 
         editAPI.setOnClickListener(view->{
             Intent intent = new Intent(this, EditActivity.class);
+            startActivity(intent);
+
+        });
+        codeAPI.setOnClickListener(view->{
+            Intent intent = new Intent(this, Chat.class);
             startActivity(intent);
 
         });

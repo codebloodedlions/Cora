@@ -26,7 +26,6 @@ public class CodeEditor extends AppCompatActivity {
 
         String completionType = "code-simple";
         TextView responsePane = findViewById(R.id.responsePane);
-        //Log.i("CodeEditor", responsePane.getText().toString());
         responsePane.setMovementMethod(new ScrollingMovementMethod());
         EditText prompt = findViewById(R.id.editPrompt);
         Button submitPrompt = findViewById(R.id.submitButton);

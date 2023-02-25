@@ -6,10 +6,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.res.AssetManager;
 import android.os.Bundle;
-import android.text.method.ScrollingMovementMethod;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -46,41 +42,28 @@ public class Chat extends AppCompatActivity {
         messageRV.setLayoutManager(manager);
         messageRV.setAdapter(messageAdapter);
 
-        sendIV.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(chatEV.getText().toString().isEmpty()) {
-                    Toast.makeText(Chat.this, "Please enter a message", Toast.LENGTH_LONG).show();
-                    return;
-                }
-                getResponse(chatEV.getText().toString());
-                chatEV.setText("");
+        sendIV.setOnClickListener(view -> {
+            if(chatEV.getText().toString().isEmpty()) {
+                Toast.makeText(Chat.this, "Please enter a message", Toast.LENGTH_LONG).show();
+                return;
             }
+            getResponse(chatEV.getText().toString());
+            chatEV.setText("");
         });
     }
 
     private void getResponse(String message) {
+        AssetManager assetManager = getAssets();
+        String completionType = "text";
+
         messageArrayList.add(new Message(message,USER_KEY));
         messageAdapter.notifyDataSetChanged();
 
-        AssetManager assetManager = getAssets();
-
-        String completionType = "text";
-        TextView response = findViewById(R.id.receiveTxt);
-        //Log.i("Chat", response.toString());
-        //response.setMovementMethod(new ScrollingMovementMethod());
-        EditText prompt = findViewById(R.id.messageBox);
-
-        sendIV.setOnClickListener(view-> {
-            try {
-                completions.setCodeCompleteText(response,
-                        assetManager,
-                        prompt.getText().toString(),
-                        completionType);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        });
-
+        try {
+            completions.addMsgArrResponse(messageArrayList, BOT_KEY, assetManager, message, completionType);
+            messageAdapter.notifyDataSetChanged();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

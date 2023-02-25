@@ -10,7 +10,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="390dp"
-        android:layout_height="635dp"
+        android:layout_height="500dp"
         android:layout_marginTop="24dp"
         android:backgroundTint="@color/darkBlueGrey"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,9 +20,10 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="500dp">
 
-            <EditText
+            <TextView
+                android:id="@+id/responsePane"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -42,22 +43,46 @@
     </androidx.cardview.widget.CardView>
 
     <EditText
-        android:id="@+id/codeEditorET"
+        android:id="@+id/instructionET"
         android:layout_width="300dp"
         android:layout_height="42dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
+        android:background="@drawable/prompt_box_background"
+        android:ems="10"
+        android:textSize="16dp"
+        android:hint="Give me a task!"
+        android:padding="8sp"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/promptET"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.example.cora.util.numberedEditText
+        android:id="@+id/promptET"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/prompt_box_background"
         android:ems="10"
+        android:textSize="16dp"
+        android:hint="Enter Prompt"
+        android:maxLines="10"
         android:padding="8sp"
-        android:hint="Enter code..."
         android:textColor="@color/grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.967" />
 
     <Button
         android:id="@+id/button"

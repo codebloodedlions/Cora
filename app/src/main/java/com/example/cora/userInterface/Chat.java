@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.res.AssetManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -54,6 +55,8 @@ public class Chat extends AppCompatActivity {
 
     private void getResponse(String message) {
         AssetManager assetManager = getAssets();
+//        message = message.replaceAll("^[\n\n\r]", "");
+//        Log.i("MESSAGE", "[MESSAGE] >> " + message);
         String completionType = "text";
 
         messageArrayList.add(new Message(message,USER_KEY));

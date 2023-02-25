@@ -24,7 +24,7 @@ public class completions {
     //get entire data
     public static void addMsgArrResponse(ArrayList<Message> msgArray, String BOT_KEY, AssetManager assetManager, String prompt, String completionType) throws InterruptedException {
         String temp = codeCompleteText(assetManager, prompt, completionType);
-        msgArray.add(new Message(temp, BOT_KEY));
+        msgArray.add(new Message(temp.trim(), BOT_KEY));
     }
 
     // set text via UI thread

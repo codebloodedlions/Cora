@@ -10,9 +10,13 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="390dp"
-        android:layout_height="590dp"
+        android:layout_height="0dp"
         android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="25dp"
         android:backgroundTint="@color/darkBlueGrey"
+        app:layout_constraintBottom_toTopOf="@+id/instructionET"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,6 +30,7 @@
                 android:id="@+id/responsePane"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="20sp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
@@ -39,6 +44,7 @@
 
         </RelativeLayout>
 
+
     </androidx.cardview.widget.CardView>
 
     <EditText
@@ -46,22 +52,22 @@
         android:layout_width="300dp"
         android:layout_height="42dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/prompt_box_background"
         android:ems="10"
         android:hint="Give me a task!"
         android:padding="8sp"
         android:textColor="@color/grey"
         android:textSize="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        app:layout_constraintBottom_toTopOf="@+id/promptET"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/promptET"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/prompt_box_background"
         android:ems="10"
         android:hint="Enter Prompt"
@@ -69,15 +75,15 @@
         android:padding="8sp"
         android:textColor="@color/grey"
         android:textSize="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/instructionET" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="10dp"
         android:background="@drawable/button_background"
         android:text="Send"
         app:layout_constraintEnd_toEndOf="parent"

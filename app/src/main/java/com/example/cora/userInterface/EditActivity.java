@@ -6,6 +6,7 @@ import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -36,6 +37,11 @@ public class EditActivity extends AppCompatActivity {
                     assetManager,
                     prompt.getText().toString(),
                     instruction.getText().toString());
+
+            instruction.setText("");
+            prompt.setText("");
+            instruction.onEditorAction(EditorInfo.IME_ACTION_DONE);
+            prompt.onEditorAction(EditorInfo.IME_ACTION_DONE);
         });
     }
 }

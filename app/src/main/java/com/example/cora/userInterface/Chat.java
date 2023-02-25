@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -50,6 +51,7 @@ public class Chat extends AppCompatActivity {
             }
             getResponse(chatEV.getText().toString());
             chatEV.setText("");
+            chatEV.onEditorAction(EditorInfo.IME_ACTION_DONE);
         });
     }
 

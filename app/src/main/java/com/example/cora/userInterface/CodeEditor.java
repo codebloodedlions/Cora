@@ -6,6 +6,7 @@ import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -36,6 +37,9 @@ public class CodeEditor extends AppCompatActivity {
                         assetManager,
                         prompt.getText().toString(),
                         completionType);
+
+                prompt.setText("");
+                prompt.onEditorAction(EditorInfo.IME_ACTION_DONE);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

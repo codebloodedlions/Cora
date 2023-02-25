@@ -8,7 +8,7 @@
         android:id="@+id/sentTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/sent_message_background"
         android:maxWidth="250dp"

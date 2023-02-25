@@ -75,4 +75,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back_button" />
 
+    <TextView
+        android:id="@+id/dummy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

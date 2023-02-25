@@ -12,6 +12,15 @@
         android:theme="@style/Theme.Cora"
         tools:targetApi="31">
         <activity
+            android:name=".EditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Chat"
+            android:exported="false" />
+        <activity
+            android:name=".CodeEditor"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

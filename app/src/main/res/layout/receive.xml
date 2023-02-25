@@ -15,7 +15,7 @@
         android:maxWidth="250dp"
         android:padding="12dp"
         android:paddingStart="15dp"
-        android:text="This is a sent message"
+        android:text="This is a received message"
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"

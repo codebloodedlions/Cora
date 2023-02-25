@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -25,11 +26,12 @@ public class CodeEditor extends AppCompatActivity {
 
         String completionType = "code-simple";
         TextView responsePane = findViewById(R.id.responsePane);
+        //Log.i("CodeEditor", responsePane.getText().toString());
         responsePane.setMovementMethod(new ScrollingMovementMethod());
         EditText prompt = findViewById(R.id.editPrompt);
         Button submitPrompt = findViewById(R.id.submitButton);
 
-        submitPrompt.setOnClickListener(view->{
+        submitPrompt.setOnClickListener(view-> {
             try {
                 completions.setCodeCompleteText(responsePane,
                         assetManager,

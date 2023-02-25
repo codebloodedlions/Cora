@@ -19,9 +19,6 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     private Context context;
     private ArrayList<Message> messageList;
 
-    private final int ITEM_RECEIVE = 1;
-    private final int ITEM_SENT = 0;
-
     public MessageAdapter(Context context, ArrayList<Message> messageList) {
         this.context = context;
         this.messageList = messageList;
@@ -35,14 +32,14 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         //inflate layout based on receive or sent
         switch (viewType) {
             case 0:
-                //inflate receive layout
-                view = LayoutInflater.from(context).inflate(R.layout.receive, parent, false);
-                return new ReceiveViewHolder(view);
-
-            case 1:
                 //inflate sent layout
                 view = LayoutInflater.from(context).inflate(R.layout.send, parent, false);
                 return new SentViewHolder(view);
+
+            case 1:
+                //inflate receive layout
+                view = LayoutInflater.from(context).inflate(R.layout.receive, parent, false);
+                return new ReceiveViewHolder(view);
         }
 
         return null;
@@ -57,13 +54,13 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         switch (currentMessage.getSenderId()) {
             case "user":
                 //for sent view holder
-                SentViewHolder viewHolder = (SentViewHolder) holder; //type cast
-                viewHolder.sentMessage.setText(currentMessage.getMessage());
+                ((SentViewHolder)holder).sentMessage.setText(currentMessage.getMessage());
+                break;
 
             case "bot":
                 //for the receive view holder
-                ReceiveViewHolder receiveViewHolder = (ReceiveViewHolder) holder;
-                receiveViewHolder.receiveMessage.setText(currentMessage.getMessage());
+                ((ReceiveViewHolder)holder).receiveMessage.setText(currentMessage.getMessage());
+                break;
         }
 
     }

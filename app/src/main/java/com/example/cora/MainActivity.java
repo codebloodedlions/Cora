@@ -47,9 +47,9 @@ public class MainActivity extends AppCompatActivity {
         mainText.setMovementMethod(new ScrollingMovementMethod());
 
         try {
-            completions.setCodeCompleteText(mainText, assetManager, completionsPrompt, completionType);
-            //edits.setCodeEditText(mainText, assetManager, editPrompt, editInstruction);
-        } catch (InterruptedException e) {
+            //completions.setCodeCompleteText(mainText, assetManager, completionsPrompt, completionType);
+            edits.setCodeEditText(mainText, assetManager, editPrompt, editInstruction);
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

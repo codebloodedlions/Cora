@@ -4,9 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.content.res.AssetManager;
+import android.hardware.input.InputManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -33,6 +36,8 @@ public class Chat extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
 
+        TextView dummy = findViewById(R.id.dummy);
+
         messageRV = findViewById(R.id.chatRV);
         chatEV = findViewById(R.id.messageBox);
         sendIV = findViewById(R.id.sendIV);
@@ -48,23 +53,25 @@ public class Chat extends AppCompatActivity {
                 Toast.makeText(Chat.this, "Please enter a message", Toast.LENGTH_LONG).show();
                 return;
             }
-            getResponse(chatEV.getText().toString());
+            InputMethodManager inputManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+            inputManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
+            Toast.makeText(Chat.this, "Thinking...", Toast.LENGTH_LONG).show();
+
+            messageArrayList.add(new Message(chatEV.getText().toString(),USER_KEY));
+            messageAdapter.notifyDataSetChanged();
+
+
+            getResponse(dummy, chatEV.getText().toString());
             chatEV.setText("");
         });
     }
 
-    private void getResponse(String message) {
+    private void getResponse(TextView dummy, String message) {
         AssetManager assetManager = getAssets();
-//        message = message.replaceAll("^[\n\n\r]", "");
-//        Log.i("MESSAGE", "[MESSAGE] >> " + message);
         String completionType = "text";
 
-        messageArrayList.add(new Message(message,USER_KEY));
-        messageAdapter.notifyDataSetChanged();
-
         try {
-            completions.addMsgArrResponse(messageArrayList, BOT_KEY, assetManager, message, completionType);
-            messageAdapter.notifyDataSetChanged();
+            completions.addMsgArrResponse(dummy, messageAdapter, messageArrayList, BOT_KEY, assetManager, message, completionType);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

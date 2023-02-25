@@ -1,5 +1,6 @@
 package com.example.cora.api;
 
+import android.content.Context;
 import android.content.res.AssetManager;
 import android.util.Log;
 import android.widget.TextView;
@@ -7,7 +8,9 @@ import android.widget.TextView;
 import com.example.cora.api.Models.completions.cRoot;
 import com.example.cora.file.keyRetrieval;
 import com.example.cora.json.ResponseParser;
+import com.example.cora.userInterface.Chat;
 import com.example.cora.userInterface.Message;
+import com.example.cora.userInterface.MessageAdapter;
 
 import org.json.JSONObject;
 
@@ -22,9 +25,23 @@ import java.util.concurrent.atomic.AtomicReference;
 
 public class completions {
     //get entire data
-    public static void addMsgArrResponse(ArrayList<Message> msgArray, String BOT_KEY, AssetManager assetManager, String prompt, String completionType) throws InterruptedException {
-        String temp = codeCompleteText(assetManager, prompt, completionType);
-        msgArray.add(new Message(temp.trim(), BOT_KEY));
+    public static void addMsgArrResponse(TextView dummy, MessageAdapter messageAdapter, ArrayList<Message> msgArray, String BOT_KEY, AssetManager assetManager, String prompt, String completionType) throws InterruptedException {
+        AtomicReference<String> response = new AtomicReference<>();
+
+        //noinspection CodeBlock2Expr
+        Thread thread = new Thread(() -> {
+            response.set(gptAPI(assetManager, prompt, completionType).choices.get(0).getText());
+            msgArray.add(new Message(response.get().trim(), BOT_KEY));
+
+            dummy.post(() -> {
+                messageAdapter.notifyDataSetChanged();
+            });
+
+        });
+
+
+        thread.start();
+        //thread.join();
     }
 
     // set text via UI thread

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Cora</string>
+    <string name="sample_code_input">public static void main(String[] args){\n\t\t\tSystem.out.println("I'm Code!");\n\t\t\tString test = "YES";\n\t\t\ttest="test1";\n}</string>
 </resources>

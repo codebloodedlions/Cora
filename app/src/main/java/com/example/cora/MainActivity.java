@@ -19,23 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         AssetManager assetManager = getAssets();
 
-        String completionsPrompt = "    function binarySearch(arr, target) {\n" +
-                "      let left = 0;\n" +
-                "      let right = arr.length - 1;\n" +
-                "      let middle = Math.floor((left + right) / 2);\n" +
-                "    \n" +
-                "      while (arr[middle] !== target && left <= right) {\n" +
-                "        if (target < arr[middle]) {\n" +
-                "          right = middle - 1;\n" +
-                "        } else {\n" +
-                "          left = middle + 1;\n" +
-                "        }\n" +
-                "        middle = Math.floor((left + right) / 2);\n" +
-                "      }\n" +
-                "    \n" +
-                "      return arr[middle] === target ? middle : -1;\n" +
-                "    }" +
-                "\"\"\"What does this do?";
+        String completionsPrompt = "create binary search algorithm in java";
 
         String editPrompt = "System.out,println(\"Hello World\"";
         String editInstruction = "Fix the syntax mistakes";
@@ -46,12 +30,12 @@ public class MainActivity extends AppCompatActivity {
         TextView mainText = findViewById(R.id.main_text);
         mainText.setMovementMethod(new ScrollingMovementMethod());
 
-        try {
-            //completions.setCodeCompleteText(mainText, assetManager, completionsPrompt, completionType);
-            edits.setCodeEditText(mainText, assetManager, editPrompt, editInstruction);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        try {
+//            completions.setCodeCompleteText(mainText, assetManager, completionsPrompt, completionType);
+//            //edits.setCodeEditText(mainText, assetManager, editPrompt, editInstruction);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
 
     }
 }

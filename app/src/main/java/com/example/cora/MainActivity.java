@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+import com.example.cora.userInterface.CodeEditor;
+import com.example.cora.userInterface.EditActivity;
+
 
 public class MainActivity extends AppCompatActivity {
 

@@ -40,7 +40,6 @@
         android:textColorHint="@color/black"
         android:hint="Type a message..."
         android:paddingLeft="12dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

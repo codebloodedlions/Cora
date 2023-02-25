@@ -68,15 +68,17 @@ public class Chat extends AppCompatActivity {
         String completionType = "text";
         TextView response = findViewById(R.id.receiveTxt);
         //Log.i("Chat", response.toString());
-        //response.setMovementMethod(new ScrollingMovementMethod());
-        EditText prompt = findViewById(R.id.messageBox);
+        response.setMovementMethod(new ScrollingMovementMethod());
 
         sendIV.setOnClickListener(view-> {
             try {
                 completions.setCodeCompleteText(response,
                         assetManager,
-                        prompt.getText().toString(),
+                        message,
                         completionType);
+
+                //messageArrayList.add(new Message());
+
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

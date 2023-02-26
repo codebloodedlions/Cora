@@ -76,7 +76,7 @@ public class edits {
             postBody.put("model", "code-davinci-edit-001");
             postBody.put("input", prompt);
             postBody.put("instruction", instruction);
-            postBody.put("temperature", 0.0);
+            postBody.put("temperature", 0.1);
             postBody.put("top_p", 1);
 
             Log.i("[API]", "[EDIT-API] Made it past POST");

@@ -7,7 +7,7 @@
 </h1>
 
 <h3 align="center">
-Meet CORA! A personal assitant to accompany you throughout your coding adventures. Whether you're a newcomer or seasoned developer, CORA provdes tools that will help tackle all sorts of programming problems, while providing a means to broaden your knowledge!
+Meet CORA! A personal assitant to accompany you throughout your coding adventures. Whether you're a newcomer or seasoned developer, CORA provdes tools that will help tackle all sorts of programming problems, while providing a way to broaden your knowledge!
 </h3>
 
 <h5 align="center">

@@ -1,44 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        app:constraintSetEnd="@id/end"
-        app:constraintSetStart="@+id/start"
-        app:autoTransition="animateToEnd"
-        app:duration="2000">
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:autoTransition="animateToEnd"
+        motion:duration="1000">
+       <KeyFrameSet>
 
-        <KeyFrameSet>
-            <KeyAttribute
-                app:motionTarget="@id/coraBotLogo"
-                app:framePosition="0"
-                android:scaleX="1"/>
-
-            <KeyAttribute
-                app:motionTarget="@id/coraBotLogo"
-                app:framePosition="0"
-                android:scaleY="1"/>
-
-            <KeyAttribute
-                app:motionTarget="@id/coraBotLogo"
-                app:framePosition="20"
-                android:scaleX="0.8"/>
-
-            <KeyAttribute
-                app:motionTarget="@id/coraBotLogo"
-                app:framePosition="20"
-                android:scaleY="0.8"/>
-
-            <KeyAttribute
-                app:motionTarget="@id/coraBotLogo"
-                app:framePosition="100"
-                android:scaleX="50"/>
-
-            <KeyAttribute
-                app:motionTarget="@id/coraBotLogo"
-                app:framePosition="100"
-                android:scaleY="50"/>
-        </KeyFrameSet>
+           <KeyAttribute
+               motion:motionTarget="@+id/coraBotLogo"
+               motion:framePosition="0"
+               android:scaleX="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/coraBotLogo"
+               motion:framePosition="0"
+               android:scaleY="1"/>
+           <KeyAttribute
+               motion:motionTarget="@+id/coraBotLogo"
+               motion:framePosition="20"
+               android:scaleX="0.8" />
+           <KeyAttribute
+               motion:motionTarget="@+id/coraBotLogo"
+               motion:framePosition="20"
+               android:scaleY="0.8" />
+           <KeyAttribute
+               motion:motionTarget="@+id/coraBotLogo"
+               motion:framePosition="100"
+               android:scaleX="50" />
+           <KeyAttribute
+               motion:motionTarget="@+id/coraBotLogo"
+               motion:framePosition="100"
+               android:scaleY="50" />
+       </KeyFrameSet>
+        <OnClick motion:targetId="@+id/coraBotLogo" />
     </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+    </ConstraintSet>
 
 </MotionScene>

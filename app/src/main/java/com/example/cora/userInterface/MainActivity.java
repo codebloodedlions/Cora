@@ -3,6 +3,7 @@ package com.example.cora.userInterface;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.motion.widget.MotionLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTransitionCompleted(MotionLayout motionLayout, int currentId) {
-
+                //startActivity(new Intent(MainActivity.this, HomeActivity.class));
             }
 
             @Override

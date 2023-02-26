@@ -20,7 +20,7 @@ Meet CORA! A personal assitant to accompany you throughout your coding adventure
 </h5>
 
 <p>
-  &nbsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;Code Generation
+  &emsp;&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;Code Generation
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Chat/Question
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Syntax/Grammar
   </>
@@ -28,9 +28,7 @@ Meet CORA! A personal assitant to accompany you throughout your coding adventure
 <p float="left">
   &emsp;
   <img src="https://github.com/codebloodedlions/Cora/blob/master/code-gen.gif" height="500" width="250"/>
-  &emsp;
   <img src="https://github.com/codebloodedlions/Cora/blob/master/chat.gif" height="500" width="250"/>
-  &emsp;
   <img src="https://github.com/codebloodedlions/Cora/blob/master/syntax.gif" height="500" width="250"/>
 </p>
 

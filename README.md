@@ -16,7 +16,7 @@ Meet CORA! A personal assitant to accompany you throughout your coding adventure
 - Don't know how a Merge Sort algorithm is written? New to programming and need help implementing a data structure? Ask CORA and receive an example implementation in seconds!
 
 <h5 align="center">
-  :film_strip: Demonstration :film_strip:
+  &nbsp;:film_strip: Demonstration :film_strip:
 </h5>
 
 <p>

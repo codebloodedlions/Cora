@@ -30,9 +30,9 @@
 
 <p float="left">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/OpenAI_Logo_%282%29.svg/2560px-OpenAI_Logo_%282%29.svg.png" height="150" width="230"/>
-  &emsp;&emsp;&nbsp;&nbsp;
+  &emsp;&emsp;&nbsp;&nbsp;&nbsp;
   <img src="https://logos-world.net/wp-content/uploads/2021/08/Android-wordmark-Logo-2014-2019.png" height="140" width="250"/>
-  &emsp;&emsp;&nbsp;&nbsp;
+  &emsp;&emsp;&nbsp;&nbsp;&nbsp;
   <img src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png" height="140" width="230"/>
 </p>
 

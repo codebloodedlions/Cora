@@ -7,7 +7,7 @@
 </h1>
 
 <h3 align="center">
-Meet CORA! A personal assitant to accompany you throughout your coding adventures. Whether you're a newcomer or seasoned developer, CORA provides tools that will help tackle all sorts of programming problems, while providing a way to broaden your knowledge!
+Meet CORA, a personal assitant to accompany you throughout your coding adventures. Whether you're a newcomer or seasoned developer, CORA provides tools that will help tackle all sorts of programming problems, while providing a way to broaden your knowledge!
 </h3>
 
 - Using the power of AI, CORA is able to intelligently assist in solving problems and answering questions of all kinds!

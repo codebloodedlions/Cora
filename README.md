@@ -36,7 +36,7 @@ Meet CORA! A personal assitant to accompany you throughout your coding adventure
 
 # Fun Facts!
 - CORA was in the oven for over 27 hours!
-- We had way too much fun sending prompts and receiving responses to/from the AI!
+- Much fun was had sending prompts and receiving responses to and from the AI.
 
 # Powered By:
 

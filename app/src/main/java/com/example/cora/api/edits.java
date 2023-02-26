@@ -30,7 +30,7 @@ public class edits {
             try {
                 String temp = codeEditText(assetManager, prompt, instruction);
                 //Log.i("[API-ADD-TEXT]", temp);
-                textView.setText(temp);
+                textView.setText(temp.trim());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

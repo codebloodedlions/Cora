@@ -20,12 +20,12 @@ Meet CORA! A personal assitant to accompany you throughout your coding adventure
 </h5>
 
 <p>
-  &emsp;&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;Code Generation
-  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Chat/Question
+  &nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Code Generation
+  &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Chat/Question
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Syntax/Grammar
   </>
 
-<p float="left">
+<p float="left" align="center">
   &emsp;
   <img src="https://github.com/codebloodedlions/Cora/blob/master/code-gen.gif" height="500" width="250"/>
   <img src="https://github.com/codebloodedlions/Cora/blob/master/chat.gif" height="500" width="250"/>

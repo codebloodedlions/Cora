@@ -45,6 +45,20 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
+        android:id="@+id/coraChatName"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cora_name_logo" />
+
+    <ImageView
         android:id="@+id/coraChatLogo"
         android:layout_width="85dp"
         android:layout_height="73dp"
@@ -58,7 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="76dp"
-        android:text="CORA"
+        android:text=""
         android:textColor="@color/orange"
         android:textSize="32sp"
         app:layout_constraintEnd_toStartOf="@+id/coraChatLogo"

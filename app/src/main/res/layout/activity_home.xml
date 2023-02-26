@@ -19,12 +19,25 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/chatbot_logo" />
 
+    <ImageView
+        android:id="@+id/nameLogo"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="196dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cora_name_logo" />
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="264dp"
-        android:text="Hi!"
+        android:text=""
         android:textColor="@color/white"
         android:textSize="28sp"
         android:textStyle="bold"
@@ -38,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="I'm Cora"
+        android:text=""
         android:textColor="@color/white"
         android:textSize="28sp"
         android:textStyle="bold"
@@ -50,11 +63,12 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:text="How May I Assist You?"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -64,7 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@drawable/button_background"
-        android:text="Code Generation"
+        android:text="Code Generate"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

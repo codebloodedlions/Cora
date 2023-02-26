@@ -20,7 +20,7 @@ Meet CORA! A personal assitant to accompany you throughout your coding adventure
 </h5>
 
 <p>
-  &nbsp;&nbsp;&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;Code Generation
+  &nbsp;&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;Code Generation
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Chat/Question
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Syntax/Grammar
   </>

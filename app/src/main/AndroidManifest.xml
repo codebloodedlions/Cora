@@ -15,7 +15,7 @@
         android:theme="@style/Theme.Cora"
         tools:targetApi="31" >
         <activity
-            android:name=".MainActivity"
+            android:name=".userInterface.HomeActivity"
             android:exported="false" />
         <activity
             android:name=".userInterface.EditActivity"
@@ -27,7 +27,7 @@
             android:name=".userInterface.CodeEditor"
             android:exported="false" />
         <activity
-            android:name=".userInterface.HomeActivity"
+            android:name=".userInterface.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

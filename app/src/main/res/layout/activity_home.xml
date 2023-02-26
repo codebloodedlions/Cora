@@ -59,38 +59,38 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/codeBtn"
+        android:id="@+id/generateBtn"
         android:layout_width="115dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@drawable/button_background"
-        android:text="Code"
+        android:text="Generate"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/textBtn"
+        android:id="@+id/chatBtn"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/button_background"
-        android:text="Text"
+        android:text="Chat"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/codeBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/generateBtn" />
 
     <Button
-        android:id="@+id/editBtn"
+        android:id="@+id/syntaxBtn"
         android:layout_width="115dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/button_background"
-        android:text="Edit"
+        android:text="Syntax"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/chatBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

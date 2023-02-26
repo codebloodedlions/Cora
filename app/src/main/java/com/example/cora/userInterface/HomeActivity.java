@@ -16,25 +16,25 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Button codeBtn = findViewById(R.id.codeBtn);
-        Button textBtn = findViewById(R.id.textBtn);
-        Button editBtn = findViewById(R.id.editBtn);
+        Button generateBtn = findViewById(R.id.generateBtn);
+        Button chatBtn = findViewById(R.id.chatBtn);
+        Button syntaxBtn = findViewById(R.id.syntaxBtn);
 
-        codeBtn.setOnClickListener(new View.OnClickListener() {
+        generateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(HomeActivity.this, CodeEditor.class));
             }
         });
 
-        textBtn.setOnClickListener(new View.OnClickListener() {
+        chatBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(HomeActivity.this, Chat.class));
             }
         });
 
-        editBtn.setOnClickListener(new View.OnClickListener() {
+        syntaxBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(HomeActivity.this, EditActivity.class));

@@ -18,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Button codeAPI = findViewById(R.id.codeBtn);
-        Button textAPI = findViewById(R.id.textBtn);
-        Button editAPI = findViewById(R.id.editBtn);
+        Button codeAPI = findViewById(R.id.generateBtn);
+        Button textAPI = findViewById(R.id.chatBtn);
+        Button editAPI = findViewById(R.id.syntaxBtn);
 
         editAPI.setOnClickListener(view->{
             Intent intent = new Intent(this, EditActivity.class);

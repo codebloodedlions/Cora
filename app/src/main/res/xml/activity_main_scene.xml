@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@+id/start"
+        app:autoTransition="animateToEnd"
+        app:duration="2000">
+
+        <KeyFrameSet>
+            <KeyAttribute
+                app:motionTarget="@id/coraBotLogo"
+                app:framePosition="0"
+                android:scaleX="1"/>
+
+            <KeyAttribute
+                app:motionTarget="@id/coraBotLogo"
+                app:framePosition="0"
+                android:scaleY="1"/>
+
+            <KeyAttribute
+                app:motionTarget="@id/coraBotLogo"
+                app:framePosition="20"
+                android:scaleX="0.8"/>
+
+            <KeyAttribute
+                app:motionTarget="@id/coraBotLogo"
+                app:framePosition="20"
+                android:scaleY="0.8"/>
+
+            <KeyAttribute
+                app:motionTarget="@id/coraBotLogo"
+                app:framePosition="100"
+                android:scaleX="50"/>
+
+            <KeyAttribute
+                app:motionTarget="@id/coraBotLogo"
+                app:framePosition="100"
+                android:scaleY="50"/>
+        </KeyFrameSet>
+    </Transition>
+
+</MotionScene>

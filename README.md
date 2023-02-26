@@ -18,6 +18,13 @@ Meet CORA! A personal assitant to accompany you throughout your coding adventure
 <h5 align="center">
   :film_strip: Demonstration :film_strip:
 </h5>
+
+<p>
+   &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;Code Generation
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Chat/Question
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Syntax/Grammar
+  </>
+
 <p float="left">
   &emsp;
   <img src="https://github.com/codebloodedlions/Cora/blob/master/code-gen.gif" height="500" width="250"/>

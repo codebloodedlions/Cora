@@ -1,6 +1,6 @@
 # Cora
 <p align="center">
-  <img src="https://github.com/codebloodedlions/Zequity/blob/master/zequity_logo.png" width="520" height="150"/>
+  <img src="" width="520" height="150"/>
 </p>
 
 <p align="center"> 
@@ -18,7 +18,7 @@
 <p align="center">
   <br/>
   (demo link)
-  <img src="https://github.com/codebloodedlions/Zequity/blob/master/zequity_demo.gif"/>
+  <img src=""/>
 </p>
 
 # Fun Facts!
@@ -26,4 +26,4 @@
 
 
 # Powered By:
-<img src="https://ii.library.jhu.edu/wp-content/uploads/sites/31/2023/01/OpenAI-logo-1.jpg" width="310" height="310"/>
+<img src="https://ii.library.jhu.edu/wp-content/uploads/sites/31/2023/01/OpenAI-logo-1.jpg"/>

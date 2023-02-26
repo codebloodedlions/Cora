@@ -34,16 +34,23 @@ public class EditActivity extends AppCompatActivity {
         Button submitButton = findViewById(R.id.button);
 
         submitButton.setOnClickListener(view -> {
-            edits.setCodeEditText(responsePane,
-                    assetManager,
-                    prompt.getText().toString(),
-                    instruction.getText().toString());
+            String instructionStr = instruction.getText().toString();
+            String promptStr = prompt.getText().toString();
 
-            instruction.setText("");
-            prompt.setText("");
             InputMethodManager inputManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
             inputManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
             Toast.makeText(EditActivity.this, "Thinking...", Toast.LENGTH_LONG).show();
+            responsePane.post(()->{
+                edits.setCodeEditText(responsePane,
+                        assetManager,
+                        promptStr,
+                        instructionStr);
+                instruction.setText("");
+                instruction.setHint("Previous Task: " +instructionStr);
+
+                prompt.setText("");
+                prompt.setHint("Previous Input: \n" + promptStr);
+            });
         });
     }
 }

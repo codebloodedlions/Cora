@@ -39,7 +39,7 @@
                     android:layout_alignParentEnd="true"
                     android:ems="10"
                     android:padding="8dp"
-                    android:text="Responses Will Be Displayed Here!"
+                    android:hint="Response(s) Will Be Displayed Here!"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"

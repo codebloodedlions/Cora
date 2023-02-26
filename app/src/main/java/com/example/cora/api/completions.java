@@ -50,7 +50,7 @@ public class completions {
             try {
                 String temp = codeCompleteText(assetManager, prompt, completionType);
                 //Log.i("[API-ADD-TEXT]", temp);
-                textView.setText(temp);
+                textView.setText(temp.trim());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

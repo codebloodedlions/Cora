@@ -34,21 +34,21 @@ public class CodeEditor extends AppCompatActivity {
         Button submitPrompt = findViewById(R.id.submitButton);
 
         submitPrompt.setOnClickListener(view-> {
+            InputMethodManager inputManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+            inputManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
+            Toast.makeText(CodeEditor.this, "Thinking...", Toast.LENGTH_LONG).show();
             try {
                 completions.setCodeCompleteText(responsePane,
                         assetManager,
                         prompt.getText().toString(),
                         completionType);
-
-                prompt.setText("");
-                InputMethodManager inputManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
-                inputManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
-                Toast.makeText(CodeEditor.this, "Thinking...", Toast.LENGTH_LONG).show();
-
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        });
 
+
+            prompt.setHint("Previous: " + prompt.getText().toString());
+            prompt.setText("");
+        });
     }
 }

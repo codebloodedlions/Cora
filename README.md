@@ -18,7 +18,13 @@ Meet CORA! A personal assitant to accompany you throughout your coding adventure
 <h5 align="center">
   :film_strip: Demonstration :film_strip:
 </h5>
- <img src=""/>
+<p float="left">
+  <img src="https://github.com/codebloodedlions/Cora/blob/master/code-gen.gif" height="500" width="250"/>
+  &emsp;&emsp;&nbsp;
+  <img src="https://github.com/codebloodedlions/Cora/blob/master/chat.gif" height="500" width="250"/>
+  &emsp;&emsp;&nbsp;
+  <img src="https://github.com/codebloodedlions/Cora/blob/master/syntax.gif" height="500" width="250"/>
+</p>
 
 # Fun Facts!
 - CORA was in the oven for over 27 hours!

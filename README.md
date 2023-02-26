@@ -30,8 +30,8 @@ Meet CORA! A personal assitant to accompany you throughout your coding adventure
   <img src="https://github.com/codebloodedlions/Cora/blob/master/code-gen.gif" height="500" width="250"/>
   <img src="https://github.com/codebloodedlions/Cora/blob/master/chat.gif" height="500" width="250"/>
   <img src="https://github.com/codebloodedlions/Cora/blob/master/syntax.gif" height="500" width="250"/>
- 
 </p>
+
 # Fun Facts!
 - CORA was in the oven for over 27 hours!
 - Much fun was had sending prompts and receiving responses to and from the AI.

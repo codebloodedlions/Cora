@@ -11,7 +11,7 @@ Meet CORA! A personal assitant to accompany you throughout your coding adventure
 </h3>
 
 - Using the power of AI, CORA is able to intelligently assist in solving problems and answering questions of all kinds!
-- Not sure if your spelling/syntax is correct? Let CORA take a look at it! If there are any problems, they'll be fixed in no time!
+- Not sure if your spelling/syntax is correct? Let CORA take a look at it! If there are any problems, CORA will fix it in no time!
 - Need help finding a project to hone your skills? Wondering what a hashmap is? Fear not! CORA has you covered!
 - Don't know how a Merge Sort algorithm is written? New to programming and need help implementing a data structure? Ask CORA and receive an example implementation in seconds!
 

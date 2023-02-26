@@ -1,4 +1,3 @@
-# Cora
 <p align="center">
   <img src="https://github.com/codebloodedlions/Cora/blob/master/cora_logo.png"/>
 </p>
@@ -9,11 +8,13 @@
   (vid link here)
 </p>
   
-# CORA is designed to assist programmers in their coding journey, both upcoming and seasoned, by providing tools that can help them tackle problems
-- Powered by OpenAI, we're able to use the power of AI to help solve your problems.
-- Use our editing feature to correct code syntax and spelling mistakes!.
-- Need help coming up with a project to hone your programmer skills? Fear not! ask Cora questions and receive helpful responses!.
-- Want to compare an algorithm? Maybe you're new to programming and need help writing a block of code? Ask Cora! receive an example implementation in seconds!
+
+# Meet CORA, a personal assitant to accompany you in your coding journey. Whether you're an upcoming or seasoned programmer, CORA provdes tools that can help you tackle just about any problem!
+- Powered by OpenAI, we're able to use the power of AI to help solve your problems and answer your questions.
+- Not sure if your spelling or syntax is correct? Let CORA take a look at it! If there are any problems, they'll be fixed sent to you!
+- Need help coming up with a project to hone your skills? Wondering what a hashmap is? Fear not! ask CORA questions and receive helpful responses!.
+- Need to see how a Merge Sort algorithm is written? Maybe you're new to programming and need help implementing a data structure? Ask CORA and receive an example implementation in seconds!
+
 
 <p align="center">
   <br/>

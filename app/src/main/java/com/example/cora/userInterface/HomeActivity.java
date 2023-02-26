@@ -23,7 +23,7 @@ public class HomeActivity extends AppCompatActivity {
         generateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this, CodeEditor.class));
+                startActivity(new Intent(HomeActivity.this, CodeGenerator.class));
             }
         });
 
@@ -37,7 +37,7 @@ public class HomeActivity extends AppCompatActivity {
         syntaxBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this, EditActivity.class));
+                startActivity(new Intent(HomeActivity.this, CodeEditor.class));
             }
         });
     }

@@ -7,8 +7,8 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.example.cora.userInterface.Chat;
+import com.example.cora.userInterface.CodeGenerator;
 import com.example.cora.userInterface.CodeEditor;
-import com.example.cora.userInterface.EditActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Button editAPI = findViewById(R.id.syntaxBtn);
 
         editAPI.setOnClickListener(view->{
-            Intent intent = new Intent(this, EditActivity.class);
+            Intent intent = new Intent(this, CodeEditor.class);
             startActivity(intent);
 
         });
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         codeAPI.setOnClickListener(view->{
-            Intent intent = new Intent(this, CodeEditor.class);
+            Intent intent = new Intent(this, CodeGenerator.class);
             startActivity(intent);
 
         });

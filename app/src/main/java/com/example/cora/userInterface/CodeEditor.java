@@ -5,19 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
-import android.util.Log;
-import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.cora.api.completions;
 import com.example.cora.api.edits;
 
 import com.example.cora.R;
-
 
 public class CodeEditor extends AppCompatActivity {
 
@@ -27,28 +23,32 @@ public class CodeEditor extends AppCompatActivity {
         setContentView(R.layout.activity_code_editor);
         AssetManager assetManager = getAssets();
 
-        String completionType = "code-simple";
         TextView responsePane = findViewById(R.id.responsePane);
         responsePane.setMovementMethod(new ScrollingMovementMethod());
-        EditText prompt = findViewById(R.id.editPrompt);
-        Button submitPrompt = findViewById(R.id.submitButton);
 
-        submitPrompt.setOnClickListener(view-> {
+        EditText instruction = findViewById(R.id.instructionET);
+        EditText prompt = findViewById(R.id.promptET);
+
+        Button submitButton = findViewById(R.id.button);
+
+        submitButton.setOnClickListener(view -> {
+            String instructionStr = instruction.getText().toString();
+            String promptStr = prompt.getText().toString();
+
             InputMethodManager inputManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
             inputManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
             Toast.makeText(CodeEditor.this, "Thinking...", Toast.LENGTH_LONG).show();
-            try {
-                completions.setCodeCompleteText(responsePane,
+            responsePane.post(()->{
+                edits.setCodeEditText(responsePane,
                         assetManager,
-                        prompt.getText().toString(),
-                        completionType);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+                        promptStr,
+                        instructionStr);
+                instruction.setText("");
+                instruction.setHint("Previous Task: " +instructionStr);
 
-
-            prompt.setHint("Previous: " + prompt.getText().toString());
-            prompt.setText("");
+                prompt.setText("");
+                prompt.setHint("Previous Input: \n" + promptStr);
+            });
         });
     }
 }

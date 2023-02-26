@@ -18,13 +18,13 @@
             android:name=".userInterface.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".userInterface.EditActivity"
+            android:name=".userInterface.CodeEditor"
             android:exported="false" />
         <activity
             android:name=".userInterface.Chat"
             android:exported="false" />
         <activity
-            android:name=".userInterface.CodeEditor"
+            android:name=".userInterface.CodeGenerator"
             android:exported="false" />
         <activity
             android:name=".userInterface.MainActivity"

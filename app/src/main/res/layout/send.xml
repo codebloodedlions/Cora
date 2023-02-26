@@ -15,7 +15,7 @@
         android:padding="12dp"
         android:paddingStart="15dp"
         android:text="This is a sent message"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

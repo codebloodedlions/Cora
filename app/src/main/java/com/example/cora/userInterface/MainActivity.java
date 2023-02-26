@@ -21,12 +21,13 @@ public class MainActivity extends AppCompatActivity {
 
 
         ImageView coraBotLogo = findViewById(R.id.coraBotLogo);
+        ImageView coraNameLogo = findViewById(R.id.coraNameLogo);
         MotionLayout motionLayout = findViewById(R.id.motionLayout);
 
         motionLayout.setTransitionListener(new MotionLayout.TransitionListener() {
             @Override
             public void onTransitionStarted(MotionLayout motionLayout, int startId, int endId) {
-
+                //coraNameLogo.setVisibility(View.INVISIBLE);
             }
 
             @Override
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTransitionCompleted(MotionLayout motionLayout, int currentId) {
-                //startActivity(new Intent(MainActivity.this, HomeActivity.class));
+                startActivity(new Intent(MainActivity.this, HomeActivity.class));
             }
 
             @Override

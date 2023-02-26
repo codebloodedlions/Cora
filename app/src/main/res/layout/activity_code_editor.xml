@@ -57,10 +57,10 @@
         android:background="@drawable/prompt_box_background"
         android:ems="10"
         android:hint="Enter Prompt"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/grey"
         android:maxLines="10"
         android:paddingStart="8sp"
-        android:textColor="@color/black"
+        android:textColor="@color/grey"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

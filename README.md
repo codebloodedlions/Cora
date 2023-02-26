@@ -29,11 +29,11 @@
 # Powered By:
 
 <p float="left">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/OpenAI_Logo_%282%29.svg/2560px-OpenAI_Logo_%282%29.svg.png" height="120" width="180"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/OpenAI_Logo_%282%29.svg/2560px-OpenAI_Logo_%282%29.svg.png" height="150" width="230"/>
   &emsp;&emsp;&nbsp;&nbsp;
-  <img src="https://logos-world.net/wp-content/uploads/2021/08/Android-wordmark-Logo-2014-2019.png" height="120" width="220"/>
+  <img src="https://logos-world.net/wp-content/uploads/2021/08/Android-wordmark-Logo-2014-2019.png" height="140" width="240"/>
   &emsp;&emsp;&nbsp;&nbsp;
-  <img src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png" height="100" width="180"/>
+  <img src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png" height="120" width="230"/>
 </p>
 
 <img src="https://opengraph.githubassets.com/66d7307ce58da368038f3a73e3feec11c6c711b348c7679f38e91a44d93c83ed/FasterXML/jackson-core"/>

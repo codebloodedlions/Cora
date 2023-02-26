@@ -19,7 +19,7 @@ Meet CORA! A personal assitant to accompany you throughout your coding adventure
   :film_strip: Demonstration :film_strip:
 </h5>
 
-<p>
+<p align="left">
   &nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Code Generation
   &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Chat/Question
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Syntax/Grammar

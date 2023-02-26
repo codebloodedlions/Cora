@@ -19,10 +19,11 @@ Meet CORA! A personal assitant to accompany you throughout your coding adventure
   :film_strip: Demonstration :film_strip:
 </h5>
 <p float="left">
+  &emsp;
   <img src="https://github.com/codebloodedlions/Cora/blob/master/code-gen.gif" height="500" width="250"/>
-  &emsp;&emsp;
+  &emsp;
   <img src="https://github.com/codebloodedlions/Cora/blob/master/chat.gif" height="500" width="250"/>
-  &emsp;&emsp;
+  &emsp;
   <img src="https://github.com/codebloodedlions/Cora/blob/master/syntax.gif" height="500" width="250"/>
 </p>
 

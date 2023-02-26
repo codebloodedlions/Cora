@@ -10,21 +10,15 @@
 Meet CORA! A personal assitant to accompany you throughout your coding adventures. Whether you're a newcomer or seasoned developer, CORA provdes tools that will help tackle all sorts of programming problems, while providing a way to broaden your knowledge!
 </h3>
 
-<h5 align="center">
-  :film_strip: Demonstration Video: link :film_strip:
-</h5>
-
-
 - Using the power of AI, CORA is able to intelligently assist in solving problems and answering questions of all kinds!
 - Not sure if your spelling/syntax is correct? Let CORA take a look at it! If there are any problems, they'll be fixed in no time!
 - Need help finding a project to hone your skills? Wondering what a hashmap is? Fear not! CORA has you covered!
 - Don't know how a Merge Sort algorithm is written? New to programming and need help implementing a data structure? Ask CORA and receive an example implementation in seconds!
 
-<p align="center">
-  <br/>
-  (demo link)
-  <img src=""/>
-</p>
+<h5 align="center">
+  :film_strip: Demonstration :film_strip:
+</h5>
+ <img src=""/>
 
 # Fun Facts!
 - CORA was in the oven for over 27 hours!

@@ -1,6 +1,6 @@
 # Cora
 <p align="center">
-  <img src="" width="520" height="150"/>
+  <img src="https://github.com/codebloodedlions/Cora/blob/master/cora_logo.png" width="520" height="150"/>
 </p>
 
 <p align="center"> 
